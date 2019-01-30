@@ -22,8 +22,8 @@ class EarthNode: SCNNode {
         
         let action = SCNAction.rotate(by: 360 * CGFloat(Double.pi / 180)
            ,around: SCNVector3(x: 0, y: 1, z: 0), duration: 10)
-        let repeataction = SCNAction.repeatForever(action)
-        self.runAction(repeataction)
+        let repeatAction = SCNAction.repeatForever(action)
+        self.runAction(repeatAction)
     }
     
     required init?(coder aDecoder: NSCoder) {
