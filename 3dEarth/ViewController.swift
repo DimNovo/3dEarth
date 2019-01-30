@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,13 +35,13 @@ class ViewController: UIViewController {
         let earthNode = EarthNode()
         scene.rootNode.addChildNode(earthNode)
         
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         sceneView.backgroundColor = UIColor.black
         sceneView.allowsCameraControl = true
-        
-        
     }
-
-
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
 
